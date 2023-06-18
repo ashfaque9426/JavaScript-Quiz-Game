@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 0.1ch;
+}
+
+body::before {
+    width: 100%;
+    height: 110vh;
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background-image: url("./olav-ahrens-rotne-MAEbdaFe4ps-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: brightness(50%);
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+    overflow: hidden;
+}
+
+#startButton {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    z-index: 3;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    aspect-ratio: 1;
+    border-radius: 50%;
+    color: black;
+    background-color: #fff;
+    font-size: xx-large;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+body::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    background-color: black;
+    opacity: 0.95;
+}
+
+body header h1 {
+    margin-top: 5%;
+}
+
+header h1 {
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+#question h1 {
+    height: 100px;
+    margin-top: 19%;
+    text-align: start;
+}
+
+main {
+    width: 59%;
+    margin-inline: auto;
+    margin-block: 0;
+}
+
+main section {
+    font-size: 2em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+main section p {
+    background-image: linear-gradient(to right, #AA076B 0%, #61045F 51%, #AA076B 100%);
+    border-radius: 10px;
+    background-size: 200% auto;
+    transition: 0.5s;
+    box-shadow: 0 0 20px #eee;
+    padding: 5%;
+    cursor: pointer;
+    display: block;
+}
+
+.chgFnt {
+    font-size: 1.35em;
+}
+
+.chgMarginInline {
+    margin-top: 10px;
+    margin-bottom: 5%;
+}
+
+main section p:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+
+main footer {
+    margin-block: 5%;
+    text-align: start;
+    font-size: 1.7em;
+    font-weight: bold;
+}
+
+#mainFooter {
+    text-align: center;
+    margin-block: 7%;
+}
+
+@media only screen and (max-width: 1920px) {
+    body {
+        height: 95vh;
+    }
+}
+
+@media only screen and (min-width: 2098px) {
+    body header h1 {
+        margin-top: 3%;
+    }
+    main {
+        width: 40%;
+    }
+    #question h1 {
+        margin-top: 10%;
+    }
+}
