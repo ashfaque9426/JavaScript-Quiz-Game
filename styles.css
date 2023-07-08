@@ -46,7 +46,7 @@ body {
     cursor: pointer;
 }
 
-body::after {
+body.after-pseudo-element::after {
     position: absolute;
     content: "";
     top: 0;

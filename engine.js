@@ -111,7 +111,9 @@ let dySec = 0;
 
 const stopWatch = function() {
     startButton.addEventListener("click", () => {
-        document.styleSheets[0].rules[4].style.zIndex = `-2`;
+        // document.styleSheets[0].rules[4].style.zIndex = `-2`;
+        const body = document.querySelector('body');
+        body.classList.remove('after-pseudo-element');
         startButton.style.display = "none";
         setInterval(() => {
             dySec++;
