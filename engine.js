@@ -177,7 +177,6 @@ function todoFunc(e, i) {
         mainFooter.innerHTML = `Your Score for this quiz game is ${score} out of ${questionArray.length} and the time you took is ${dySec} seconds or ${(dySec / 60).toFixed(2)} minutes. You have given ${score} correct answers. Congratulations.`;
 
         if(wrongAnssArr.length > 4) document.body.style.overflow = "auto";
-        if (wrongAnssArr.length > 6) document.styleSheets[0].rules[1].style.height = `300vh`;
 
         if (wrongAnssArr.length === 1) {
             mainFooter.innerHTML = `Your Score for this quiz game is ${score} out of ${questionArray.length} and the time you took is ${dySec} seconds or ${(dySec / 60).toFixed(2)} minutes. The question that you have given a wrong answer and the correct answer for that question is down bellow`;
