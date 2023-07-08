@@ -174,7 +174,7 @@ function todoFunc(e, i) {
         document.querySelector("#question h1").style.display = "none";
         mainFooter.style.textAlign = "center";
 
-        mainFooter.innerHTML = `Your Score for this quiz game is ${score} out of ${questionArray.length} and the time you took is ${dySec} seconds or ${(dySec / 60).toFixed(2)} minutes. You have given all the correct answers. Congratulations.`;
+        mainFooter.innerHTML = `Your Score for this quiz game is ${score} out of ${questionArray.length} and the time you took is ${dySec} seconds or ${(dySec / 60).toFixed(2)} minutes. You have given ${score} correct answers. Congratulations.`;
 
         if(wrongAnssArr.length > 4) document.body.style.overflow = "auto";
         if (wrongAnssArr.length > 6) document.styleSheets[0].rules[1].style.height = `300vh`;
